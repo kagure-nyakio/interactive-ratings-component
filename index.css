@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-body: hsl(216, 12%, 8%);
+  --bg-card: #18202b;
+  --bg-btn: hsl(213, 19%, 18%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --accent-clr: hsl(25, 97%, 53%);
+
+  --fs-body: 0.9375rem;
+  --fw-reg: 400;
+  --fw-bold: 700;
+  --ff-body: 'Overpass', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  line-height: 1.5;
+  color: var(--light-grey);
+  background-color: var(--bg-body);
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+/* Typography*/
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+/* Layout */
+.main {
+  background-color: var(--bg-card);
+  width: 90%;
+  max-width: 450px;
+  padding: 2em 1em;
+  border-radius: 15px;
+}
+
+.icon-star {
+  background-color: var(--bg-btn);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+/* form */
+.rating-input {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+}
+
+.btn-rate {
+  border-radius: 50%;
+  background-color: var(--bg-btn);
+  color: inherit;
+  font-weight: var(--fw-bold);
+  padding: 1em 1.5em;
+}
+
+.btn-rate:hover,
+.btn-rate:focus {
+  background-color: var(--accent-clr);
+  color: var(--white);
+}
+
+.btn-submit {
+  background-color: var(--accent-clr);
+  color: var(--white);
+  width: 100%;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 1.5px;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  color: var(--accent-clr);
+  background-color: var(--white);
+}
+
+/* Thank you state */
+
+.thank-you-state-card {
+  text-align: center;
+}
+
+.thank-you-icon {
+  margin: 0 auto;
+}
+
+.rating-summary {
+  background-color: var(--bg-btn);
+  color: var(--accent-clr);
+  opacity: .75;
+  padding: .5em .75em;
+  width: fit-content;
+  margin: 1.5em auto;
+  border-radius: 20px;
+}
